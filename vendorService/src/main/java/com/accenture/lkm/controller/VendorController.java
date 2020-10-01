@@ -53,7 +53,10 @@ public class VendorController {
 		return new ResponseEntity<VendorBean>(service.updateVendor(bean), HttpStatus.OK);
 	}
 	
-	
+	@RequestMapping(value = "/")
+	public String intro(){
+		return "Welcome to Vendor Service";
+	}
 	
 	
 	
